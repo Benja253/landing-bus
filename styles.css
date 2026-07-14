@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+:root {
+    --yellow: #F6C10D;
+    --green: #11823B;
+    --blue: #0A2D56;
+    --soft-green: #EAF7EE;
+    --soft-green-two: #E3F3E7;
+    
+}
+img {
+    width: 100%;
+}
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.section_hero {
+    height: 30em;
+    background-image: url("./assets/bus-hero-image.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.hero_title,
+.hero_text {
+    width: 100%;
+    max-width: 300px;
+    margin: 3em 1em;
+    font-size: 1.7em;
+}
+.hero_title {
+    font-family: "Comfortaa", sans-serif;
+    margin-bottom: 1.5em;
+}
+.hero_cursive {
+    font-family: "Ephesis", cursive;
+    font-size: 2em;
+    line-height: 0.6em;
+    letter-spacing: 2px;
+}
+.hero_green {
+    font-size: 2em;
+    color: green;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+.hero_green_educan {
+    margin-bottom: -0.2em;
+}
+.hero_green_size {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.hero_line_container {
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+}
+.hero_line_image {
+    position: absolute;
+    top:-6.3em;
+    left: -1.5em;
+}
+.hero_text {
+    font-size: 0.8em;
+    margin-bottom: 1.5em;
+}
+.hero_text_bold {
+    font-weight: 700;
+}
