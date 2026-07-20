@@ -93,6 +93,7 @@ p {
 .header_menu {
   display: flex;
   column-gap: 1em;
+  align-items: center;
 }
 .menu_item {
   text-transform: uppercase;
@@ -104,6 +105,20 @@ p {
     transform: scale(1.05);
   }
 }
+.menu_item_whatsapp {
+  font-size: 1.8em;
+  color: white;
+  &:hover {
+    color: white;
+    transform: scale(1.15);
+  }
+}
+.fa-whatsapp {
+  background-color: #25D366;
+  display: block;
+  padding: 0.2em;
+  border-radius: 0.3em;
+}
 
 /* Sección Hero Image */
 .section {
@@ -113,7 +128,8 @@ p {
   align-items: flex-start;
 }
 .section_hero {
-  height: 30em;
+  height: 100vh;
+  max-height: 50em;
   background-image: url('./assets/bus-hero-image.png');
   background-position: center;
   background-size: cover;
@@ -307,6 +323,7 @@ p {
 .about {
   width: 100%;
   height: 100vh;
+  max-height: 50em;
   padding: 3em 1em;
   background-image: url("./assets/hero_about_us.png");
   background-position: center;
