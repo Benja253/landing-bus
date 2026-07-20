@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geomini:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 /* CONFIGURACIÓN GENERAL */
 * {
   box-sizing: border-box;
@@ -151,12 +153,10 @@ p {
 }
 .hero_line_container {
   width: 100%;
-  max-width: 18em;
+  max-width: 12em;
   position: relative;
-}
-.hero_line_image {
-  position: absolute;
-  top: -5.3em;
+  left: 3em;
+  top: 0.2em;
 }
 .hero_text {
   font-size: 1em;
@@ -215,8 +215,8 @@ p {
 
 /* Sección Experiencias */
 .experiences {
-    padding-bottom: 7em;
-    padding-top: 10em;
+    padding-bottom: 10em;
+    padding-top: 15em;
     position: relative;
 }
 .experiences_separator {
@@ -303,9 +303,91 @@ p {
     font-weight: 400;
 }
 
+/* About Us */
+.about {
+  width: 100%;
+  height: 100vh;
+  padding: 3em 1em;
+  background-image: url("./assets/hero_about_us.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: 1.05em;
+}
+.about_header {
+  color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to left, #ffffffdc 0%, #ffffffb6 33em,transparent 45em);
+}
+.about_message {
+  position: absolute;
+  height: max-content;
+  top: calc(100%/2);
+  transform: translateY(-50%);
+  right: 1em;
+  width: 100%;
+  max-width: 30em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 3em;
+  padding: 3em 2em 3em;
+}
+.about_p1,
+.about_p2 {
+  padding-bottom: 1em;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+}
+.about_p2 {
+  text-align: initial;
+}
+.about_p1_name {
+  font-weight: 700;
+  font-size: 0.9;
+}
+.about_p3 {
+  display: grid;
+  justify-items: center;
+  transform: scale(1.1);
+  margin-top: 2em;
+  color: black;
+  /* background: linear-gradient(to right, #315ee4, #84d13c ); */
+  /* -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; */
+}
+.about_p3_part1 {
+  font-size: 1.3em;
+  font-family: "Geomini", sans-serif;
+  font-style: oblique;
+  font-weight: 400;
+  /* letter-spacing: 0.3em; */
+  margin-bottom: 0.2em;
+}
+.about_p3_part2 {
+  font-family: "Geomini", sans-serif;
+  font-size: 1.5em;
+  font-style: italic;
+  text-transform: capitalize;
+  font-weight: 600;
+  position: relative;
+  top: -0.1em;
+}
+.about_p3_trasciende {
+  font-family: inherit;
+}
+
 /* Services */
 .services {
-  padding: 2em 2em 10em;
+  padding: 4em 2em 10em;
   position: relative;
 }
 .services_title {
@@ -402,9 +484,9 @@ p {
 }
 .service_message_separator {
   position: absolute;
-  bottom: -2.4em;
-  left: 15%;
-  width: 70%;
+  bottom: 1.5em;
+  left: 4em;
+  width: 50%;
 }
 
 /* Contact */
@@ -425,10 +507,10 @@ p {
   z-index: 1;
 }
 .contact_separator {
-  width: 22em;
+  width: 14em;
   position: absolute;
-  top: -1em;
-  left: 0;
+  top: 5.5em;
+  left: 4em;
 }
 .contact_description {
   font-size: 1.1em;
